@@ -1,0 +1,21 @@
+using System;
+using System.Windows.Forms;
+using NineMansMorrisLib;
+
+namespace NineMansMorrisUi
+{
+    internal static class Program
+    {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        private static void Main()
+        {
+            var test = new Board();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new GameSelectionForm());
+        }
+    }
+}
